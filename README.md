@@ -1,5 +1,8 @@
 EasyCar
 =======================================
+Easy Car is a website for self-driving car rentals, offering a diverse range of vehicle types. Customers can rent a car based on their own schedule.
+
+=======================================
 + Supervisor		: PHẠM CÔNG DANH
 + Semester		: II	
 + Batch No		: T5.2303.E0
