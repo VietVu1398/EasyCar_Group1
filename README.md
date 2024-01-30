@@ -14,7 +14,8 @@ Easy Car is a website for self-driving car rentals, offering a diverse range of 
 	4. Trần Thanh Hải (Student1237676)	
  
 =======================================
-+ Documentations : https://github.com/VietVu1398/EasyCar_Group1/tree/main/Documentations
++ Documentations : https://github.com/VietVu1398/EasyCar_Group1/tree/main/Document
++ Database : https://github.com/VietVu1398/EasyCar_Group1/blob/main/easycar.sql
 
 
 =======================================	
