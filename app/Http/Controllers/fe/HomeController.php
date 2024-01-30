@@ -74,6 +74,15 @@ class HomeController extends Controller
                 if(Auth::check()) {
                     // if(Auth::user()->role_value==2) {
                         
+                        
+
+                        $validator = Validator::make($request->all(), [
+                            'pickup_date'=> ['required','date_format:Y-m-d','after:today',Rule::notIn($data['rented_dates']),],
+                            'return_date'=> ['required','date_format:Y-m-d','after_or_equal:pickup_date',Rule::notIn($data['rented_dates']),],
+                        ]);
+                        if ($validator->fails()) {
+                            return back()->withErrors($validator);
+                        }
                         $pk_date = Carbon::parse($request->pickup_date);
                         $rt_date = Carbon::parse($request->return_date);
                         foreach ($data['db_dates'] as $ddd) {
@@ -86,13 +95,6 @@ class HomeController extends Controller
                             }
                         }
 
-                        $validator = Validator::make($request->all(), [
-                            'pickup_date'=> ['required','date_format:Y-m-d','after:today',Rule::notIn($data['rented_dates']),],
-                            'return_date'=> ['required','date_format:Y-m-d','after_or_equal:pickup_date',Rule::notIn($data['rented_dates']),],
-                        ]);
-                        if ($validator->fails()) {
-                            return back()->withErrors($validator);
-                        }
                         $total_days = $pk_date->diffInDays($rt_date) + 1;    
                         Session::put('pickup_date',$request->pickup_date);
                         Session::put('return_date',$request->return_date);
