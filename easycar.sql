@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 30, 2024 at 03:37 AM
+-- Generation Time: Jan 30, 2024 at 07:42 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -115,7 +115,8 @@ CREATE TABLE `bill_detail` (
 
 INSERT INTO `bill_detail` (`id`, `rental_id`, `payment_method`, `total_amount`, `paid`, `note`, `created_at`, `updated_at`) VALUES
 (2, 7, 'VNPAY', 5600000, 5600000, 'Thanh toan don hang 1706578820JGP0', '2024-01-30 01:40:57', '2024-01-30 01:50:05'),
-(3, 8, 'VNPAY', 11200000, 11200000, 'Thanh toan don hang 1706579068B4X8', '2024-01-30 01:44:52', '2024-01-30 01:44:52');
+(3, 8, 'VNPAY', 11200000, 11200000, 'Thanh toan don hang 1706579068B4X8', '2024-01-30 01:44:52', '2024-01-30 01:44:52'),
+(4, 9, 'VNPAY', 5600000, 1680000, 'Thanh toan don hang 1706582899WJU4', '2024-01-30 02:48:57', '2024-01-30 02:48:57');
 
 -- --------------------------------------------------------
 
@@ -171,7 +172,7 @@ CREATE TABLE `cars` (
 INSERT INTO `cars` (`id`, `type_id`, `brand`, `name`, `color`, `year`, `seat`, `price`, `overview`, `thumbnail`, `images`, `created_at`, `updated_at`, `product_status`) VALUES
 (22, 27, 'Ferrari', 'Ferrari Portofio', 'Red', 2018, 4, 2700000, '<p><span style=\"font-size:18px\">Ferrari Portofino (2018)</span><br />\r\n<span style=\"font-size:14px\">Ferrari Portofino</span><br />\r\nThe Ferrari Portofino is the new V8 GT set to dominate its segment thanks to a perfect combination of outright performance and versatility in addition to a level of driving pleasure and on-board comfort unparalleled on the market. Capable of unleashing a massive 600 cv and sprinting from 0 to 200 km/h in just 10.8 seconds, the Ferrari Portofino is the most powerful convertible to combine the advantages of a retractable hard top, a roomy boot and generous cockpit space complete with two rear seats suitable for short trips.</p>', '1706470021_Ferrari-Portofino-2018-1280-47.jpg', '[\"1706470021_at.Ferrari-Portofino-2018-1280-7a.jpg\",\"1706470021_at.Ferrari-Portofino-2018-1280-7b.jpg\"]', '2024-01-28 19:27:01', '2024-01-28 19:27:01', 1),
 (23, 27, 'Lamborghini', 'Lamborghini Aventardo', 'Yellow', 2019, 4, 3000000, '<p><span style=\"font-size:18px\">Lamborghini Aventador LP750-4 SV (2016)</span></p>\r\n\r\n<p>Lamborghini Aventador LP750-4 SV<br />\r\nAutomobili Lamborghini presented the Lamborghini LP750-4 Superveloce at the 2015 Geneva Motor Show.</p>\r\n\r\n<p>With increased power, lower weight, improved aerodynamics and innovative technologies the Lamborghini Aventador LP750-4 Superveloce is the most pure incarnation of a Lamborghini to date: unmistakable Lamborghini super sports car DNA, dynamic superiority and exceptional driving precision. A focus on weight reduction while incorporating innovative technologies has resulted in the most sports-oriented, fastest and most emotional series production Lamborghini ever. The weight has been further reduced by 50 kg through enhanced lightweight engineering including significant use of carbon fiber. The naturally aspirated V12 engine&#39;s power is increased to 552 kW/750 hp. This results in a power-to-weight-ratio of 2,03 kg/hp. The Superveloce accelerates from 0 to 100 km/h (62 mph) in 2.8 seconds and powers on to reach a top speed of more than 350 km/h (more than 217 mph).</p>', '1706470590_Lamborghini-Aventador_LP750-4_SV-2016-1280-05.jpg', '[\"1706470590_at.Lamborghini-Aventador_LP750-4_SV-2016-1280-3c (1).jpg\",\"1706470590_at.Lamborghini-Aventador_LP750-4_SV-2016-1280-3c.jpg\"]', '2024-01-28 20:10:15', '2024-01-28 20:10:15', 1),
-(24, 25, 'Lamborghini', 'Lamborghini Gallardor', 'White', 2011, 4, 3200000, '<p><span style=\"font-size:18px\">Lamborghini Gallardo LP570-4 Spyder Performante (2011)</span></p>\r\n\r\n<p>Lamborghini Gallardo LP570-4 Spyder Performante<br />\r\nWith the new Lamborghini Gallardo LP 570-4 Spyder Performante, Lamborghini is setting a new benchmark in the most fascinating automobile segment of all - the open-top super sports car. As &quot;Performante&quot;, the Gallardo Spyder is even lighter thanks to CFRP technology, even more agile and even more dynamic. The new Spyder Performante is an automotive high-performance athlete that combines sheer sporting excellence and extreme performance with that unique open-air feeling that only a soft-top spanning the ten-cylinder power unit can offer. Ultimately, every spin in the Spyder Performante is like a journey into the eye of the storm.</p>', '1706470841_Lamborghini-Gallardo_LP570-4_Spyder_Performante-2011-1280-09.jpg', '[\"1706470841_at.Lamborghini-Gallardo_LP570-4_Spyder_Performante-2011-1280-06.jpg\",\"1706470841_at.Lamborghini-Gallardo_LP570-4_Spyder_Performante-2011-pics-1.jpg\"]', '2024-01-28 19:51:46', '2024-01-28 19:51:46', 1),
+(24, 25, 'Lamborghini', 'Lamborghini Gallardor', 'White', 2011, 4, 3200000, '<p><span style=\"font-size:18px\">Lamborghini Gallardo LP570-4 Spyder Performante (2011)</span></p>\r\n\r\n<p>Lamborghini Gallardo LP570-4 Spyder Performante<br />\r\nWith the new Lamborghini Gallardo LP 570-4 Spyder Performante, Lamborghini is setting a new benchmark in the most fascinating automobile segment of all - the open-top super sports car. As &quot;Performante&quot;, the Gallardo Spyder is even lighter thanks to CFRP technology, even more agile and even more dynamic. The new Spyder Performante is an automotive high-performance athlete that combines sheer sporting excellence and extreme performance with that unique open-air feeling that only a soft-top spanning the ten-cylinder power unit can offer. Ultimately, every spin in the Spyder Performante is like a journey into the eye of the storm.</p>', '1706470841_Lamborghini-Gallardo_LP570-4_Spyder_Performante-2011-1280-09.jpg', '[\"1706470841_at.Lamborghini-Gallardo_LP570-4_Spyder_Performante-2011-1280-06.jpg\",\"1706470841_at.Lamborghini-Gallardo_LP570-4_Spyder_Performante-2011-pics-1.jpg\"]', '2024-01-28 19:51:46', '2024-01-30 03:51:39', 0),
 (25, 26, 'Mazda', 'Mazda CX 60', 'Red', 2018, 7, 2700000, '<p><span style=\"font-size:18px\">Mazda 6 Wagon (2018)</span><br />\r\nMazda 6 Wagon<br />\r\nThe latest update to the new Mazda 6 Sedan and Wagon is the most comprehensive yet, offering enhanced quality in almost every detail of Mazda&#39;s flagship model.</p>\r\n\r\n<p>It features a more mature, elegant and refined exterior design, and extensive interior revisions including completely new front and rear seating, premium quality trim and finish detailing throughout and, for models equipped with the MZD Connect multimedia system, the availability of Apple Car Play and Android Auto.</p>', '1706471169_Mazda-6_Wagon-2018-1280-01.jpg', '[\"1706471169_at.Mazda-6_Wagon-2018-1280-78.jpg\",\"1706471169_at.Mazda-6_Wagon-2018-1280-80.jpg\",\"1706471169_at.Mazda-6_Wagon-2018-1280-81.jpg\"]', '2024-01-28 20:09:37', '2024-01-28 20:09:37', 1),
 (26, 26, 'Mazda', 'Mazda 6 Wagon', 'Gray', 2023, 7, 2400000, '<p><span style=\"font-size:18px\">Mazda CX-60 (2023)</span><br />\r\nMazda CX-60<br />\r\nThe all-new Mazda CX-60 introduces the company&#39;s first plug-in full hybrid technology to the European SUV market. Expanding Mazda&#39;s SUV line-up, the all-new Mazda CX-60 is the first of two new models from the company&#39;s Large Product group to be introduced throughout Europe during the next two years.</p>\r\n\r\n<p>Demonstrating Mazda&#39;s commitment to a multi-solution approach to sustainable mobility and the principal of the right solution at the right time, the Mazda CX-60 meets the growing needs of the segment with a wider choice of SUVs combining the latest environmental performance with the driving pleasure inherent in every Mazda.</p>', '1706471443_Mazda-CX-60-2023-1280-03.jpg', '[\"1706471443_at.Mazda-CX-60-2023-1280-b2.jpg\",\"1706471443_at.Mazda-CX-60-2023-1280-bc.jpg\",\"1706471443_at.Mazda-CX-60-2023-1280-c9.jpg\",\"1706471443_at.Mazda-CX-60-2023-1280-da.jpg\"]', '2024-01-28 19:50:43', '2024-01-28 20:12:05', 1),
 (27, 25, 'Rolls Royce', 'Rolls Royce Droptail La Rose', 'Red', 2024, 4, 2800000, '<p><span style=\"font-size:18px\">Rolls-Royce Droptail La Rose Noire</span></p>\r\n\r\n<p>Rolls-Royce Droptail La Rose Noire (2024)</p>\r\n\r\n<p>As a House of Luxury, Rolls-Royce Motor Cars constantly seeks to create personal and deeply meaningful luxury products that reflect the marque&#39;s clients&#39; ambitions and personal codes of luxury. Rolls-Royce&#39;s unparalleled Bespoke capabilities enable clients to bring these desires to life through the commission of beautiful, handcrafted and truly individual Rolls-Royce motor cars.</p>\r\n\r\n<p>A small group of exceptional individuals wish to elevate this remarkable, deeply personal experience even further and move beyond the canvas of existing Rolls-Royce products. These highly ambitious and discerning clients seek the opportunity to work directly with the marque&#39;s designers, engineers and craftspeople to create completely unique Rolls-Royce motor cars beyond the brand&#39;s product portfolio, participating in every stage of their development. This is Rolls-Royce Coachbuild.</p>', '1706471862_Rolls-Royce-Droptail_La_Rose_Noire-2024-1280-01.jpg', '[\"1706471862_at.Rolls-Royce-Droptail_La_Rose_Noire-2024-1280-02.jpg\",\"1706471862_at.Rolls-Royce-Droptail_La_Rose_Noire-2024-1280-09.jpg\"]', '2024-01-28 19:57:42', '2024-01-28 20:12:38', 1),
@@ -250,8 +251,8 @@ CREATE TABLE `car_type` (
 INSERT INTO `car_type` (`id`, `name`, `description`, `image_type`, `type_status`, `created_at`, `updated_at`) VALUES
 (25, 'SUV 4 Car', 'This is a type of SUV that accommodates 4 seats or has the capability to run on all 4 wheels', '1706467321_xe_2.jpg', 1, '2024-01-28 18:42:01', '2024-01-28 19:11:44'),
 (26, 'SUV 7 Car', 'Often capable of carrying a large number of passengers, suitable for large families or groups', '1706468955_SUV7.jpg', 1, '2024-01-28 19:09:15', '2024-01-28 19:09:15'),
-(27, 'Luxury Car', 'Premium cars with numerous advanced features and luxurious interior design', '1706469027_Ferrari-Portofino-2018-1280-47.jpg', 1, '2024-01-28 19:10:27', '2024-01-28 19:10:27'),
-(28, 'Elictric Car', 'This is a type of electric-powered car that moves using electrical energy instead of an internal combustion engine like traditional cars', '1706469190_VinFast-LUX_SA2.0_SUV-2020-1280-01.jpg', 1, '2024-01-28 19:13:10', '2024-01-28 19:13:10');
+(27, 'Luxury Car', 'Premium cars with numerous advanced features and luxurious interior design', '1706469027_Ferrari-Portofino-2018-1280-47.jpg', 1, '2024-01-28 19:10:27', '2024-01-30 04:21:22'),
+(28, 'Elictric Car', 'This is a type of electric-powered car that moves using electrical energy instead of an internal combustion engine like traditional cars', '1706469190_VinFast-LUX_SA2.0_SUV-2020-1280-01.jpg', 0, '2024-01-28 19:13:10', '2024-01-30 04:21:47');
 
 -- --------------------------------------------------------
 
@@ -293,6 +294,13 @@ CREATE TABLE `comment_blog` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `comment_blog`
+--
+
+INSERT INTO `comment_blog` (`id`, `blog_id`, `account_id`, `reply_id`, `content`, `status`, `created_at`, `updated_at`) VALUES
+(35, 1, 21, 0, 'Your experience is very awesome. I hope that I have time to take a camp like you did.', 1, '2024-01-30 04:31:50', '2024-01-30 04:31:50');
 
 -- --------------------------------------------------------
 
@@ -350,7 +358,9 @@ INSERT INTO `history_login` (`id`, `account_id`, `login_datetime`, `logout_datet
 (21, 14, '2024-01-30 08:46:37', '2024-01-30 09:04:54'),
 (22, 14, '2024-01-30 09:11:12', '2024-01-30 09:14:42'),
 (23, 21, '2024-01-30 09:14:51', '2024-01-30 09:15:09'),
-(24, 21, '2024-01-30 09:22:35', '2024-01-30 09:31:36');
+(24, 21, '2024-01-30 09:22:35', '2024-01-30 09:31:36'),
+(25, 23, '2024-01-30 09:45:46', '2024-01-30 09:55:42'),
+(26, 21, '2024-01-30 09:55:52', '2024-01-30 11:33:52');
 
 -- --------------------------------------------------------
 
@@ -401,7 +411,8 @@ CREATE TABLE `rental` (
 
 INSERT INTO `rental` (`id`, `code`, `car_id`, `account_id`, `pickup_date`, `return_date`, `note`, `processing`, `status`, `created_at`, `updated_at`) VALUES
 (7, '1706578820JGP0', 27, 13, '2024-02-07', '2024-02-08', NULL, 3, 1, '2024-01-30 01:40:57', '2024-01-30 01:40:57'),
-(8, '1706579068B4X8', 27, 13, '2024-02-21', '2024-02-24', 'Pick up at 9.00 AM', 3, 1, '2024-01-30 01:44:52', '2024-01-30 01:44:52');
+(8, '1706579068B4X8', 27, 13, '2024-02-21', '2024-02-24', 'Pick up at 9.00 AM', 3, 1, '2024-01-30 01:44:52', '2024-01-30 01:44:52'),
+(9, '1706582899WJU4', 27, 23, '2024-02-02', '2024-02-03', 'Nhan xe luc 9h sang', 2, 1, '2024-01-30 02:48:57', '2024-01-30 03:01:59');
 
 -- --------------------------------------------------------
 
@@ -544,7 +555,7 @@ ALTER TABLE `ads_banners`
 -- AUTO_INCREMENT for table `bill_detail`
 --
 ALTER TABLE `bill_detail`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `blogs`
@@ -574,7 +585,7 @@ ALTER TABLE `comments_car`
 -- AUTO_INCREMENT for table `comment_blog`
 --
 ALTER TABLE `comment_blog`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- AUTO_INCREMENT for table `feedbacks`
@@ -586,7 +597,7 @@ ALTER TABLE `feedbacks`
 -- AUTO_INCREMENT for table `history_login`
 --
 ALTER TABLE `history_login`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `ratings`
@@ -598,7 +609,7 @@ ALTER TABLE `ratings`
 -- AUTO_INCREMENT for table `rental`
 --
 ALTER TABLE `rental`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `role_account`
@@ -652,8 +663,8 @@ ALTER TABLE `history_login`
 -- Constraints for table `ratings`
 --
 ALTER TABLE `ratings`
-  ADD CONSTRAINT `FK_accout_id` FOREIGN KEY (`account_id`) REFERENCES `account` (`id`),
-  ADD CONSTRAINT `ratings_ibfk_1` FOREIGN KEY (`car_id`) REFERENCES `cars` (`id`);
+  ADD CONSTRAINT `FK_accout_id` FOREIGN KEY (`account_id`) REFERENCES `account` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `ratings_ibfk_1` FOREIGN KEY (`car_id`) REFERENCES `cars` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `rental`
