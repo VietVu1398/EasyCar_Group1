@@ -20,6 +20,11 @@ class Comment_Car extends Model
         // cột account_id bảng comments_car chiếu đến bảng account có chứ id 
         return $this->belongsTo(CarAccount::class, 'account_id', 'id');
     }
+    
+    public function car()
+    {
+        return $this->belongsTo(CarProduct::class, 'car_id');
+    }
 
     
 

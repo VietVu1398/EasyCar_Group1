@@ -34,7 +34,7 @@
                             <tr>
                                 <th>No.</th>
                                 <th>Account</th>
-                                <th>Car Id</th>
+                                <th>Car</th>
                                 <th>Comment</th>
                                 <th>Reply</th>
                                 <th>Status</th>
@@ -53,12 +53,13 @@
                             <tr>
                                 <td>{{$comm->id}}</td>
                                 <td>
-                                    @foreach ($users as $user)
+                                    {{-- @foreach ($users as $user)
                                     @if ($user->id==$comm->account_id)
                                     {{$user->username}}
                                     @endif
-                                    @endforeach
-                                <td>{{$comm->car_id}}</td>
+                                    @endforeach --}}
+                                    {{$comm->account->username}}
+                                <td>{{$comm->car->name}}</td>
                                 <td>{{$comm->comment}}</td>
                                 <td>{{$comm->reply}}</td>
                                 <td>

@@ -156,7 +156,7 @@
                             <span>{{$car->seat}}</span>
                         </div>
                     </div>
-                    <a class="btn btn-primary px-3" href="{{route('fe.detail',[$car->name,$car->id])}}">View
+                    <a class="btn btn-primary px-3" href="{{route('fe.detail',[khongdau($car->name),$car->id] )}}">View
                         Detail</a>
                 </div>
             </div>

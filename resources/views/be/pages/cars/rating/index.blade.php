@@ -26,8 +26,8 @@
                         <thead>
                             <tr>
                                 <th>No.</th>
-                                <th>Account ID</th>
-                                <th>Car ID</th>
+                                <th>Account </th>
+                                <th>Car </th>
                                 <th>Rated</th>
                             </tr>
                         </thead>
@@ -36,13 +36,14 @@
                             <tr>
                                 <td>{{$rate->id}}</td>
                                 <td>
-                                    @foreach ($users as $user)
+                                    {{-- @foreach ($users as $user)
                                     @if ($user->id==$rate->account_id)
                                     {{$user->username}}
                                     @endif
-                                    @endforeach
+                                    @endforeach --}}
+                                    {{$rate->carAccount->username}}
                                 </td>
-                                <td>{{$rate->car_id}}</td>
+                                <td>{{$rate->car->name}}</td>
                                 <td>{{$rate->stars_rated}}</td>
                             </tr>
                             @endforeach

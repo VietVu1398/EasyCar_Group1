@@ -289,7 +289,9 @@
 
                         </div>
                     </div>
-                    <a class="btn btn-primary px-3" href="">{{$random->price}} VND/DAY</a>
+                    <a class="btn btn-primary px-3"
+                        href="{{route('fe.detail',[khongdau($random->name),$random->id] )}}">{{$random->price}}
+                        VND/DAY</a>
                 </div>
                 @endforeach
 

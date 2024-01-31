@@ -68,7 +68,7 @@ class RentalController extends Controller
 
     //Trang Thue xe
     public function rental(Request $request) {
-        if(Auth::check()){
+        if(Auth::check() && Session::has('car_id')){
             if(Session::has('car_id')) {
                 $data['car'] = CarProduct::find(Session::get('car_id'));
             }
@@ -89,7 +89,7 @@ class RentalController extends Controller
     }
     // Trang thanh toasn 
     public function payment() {
-        if(Auth::check()){
+        if(Auth::check() && Session::has('madonhang')){
         $data['car'] = CarProduct::find(Session::get('car_id'));
          return view('fe/pages/payment',$data);
         } else {
